@@ -1,0 +1,158 @@
+.right{
+    width: 400px;
+    margin-top: 20px;
+}
+.right #head{
+    padding-top: 10px;
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "楷体";
+    color:#00BCD4;
+    font-weight: 800;
+    border-radius: 10px 10px 0 0;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: #348ee2;
+}
+.right #onlineusers{
+    background-color: white;
+    height: 300px;
+    padding: 15px;
+    padding-top: 5px;
+    border-style: solid;
+    border-width: 0 4px 0 4px;
+    border-color: #348ee2;
+}
+.right #chatroom{
+    height: 200px;
+    background-color:white;
+    border-radius: 0 0 10px 10px;
+    border-style: solid;
+    border-width: 0 4px 4px 4px;
+    border-color: #348ee2;
+    display: flex;
+    flex-direction:row;
+    align-items: flex-end;
+    justify-content: center;
+}
+  
+.title{
+    width: 100%;
+    border-bottom: 3px solid #00BCD4;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #00BCD4;
+    font-weight: 600;
+
+}
+#userlist{
+
+    border: 0;
+    border-style: none;
+    border-collapse:collapse;
+}
+
+.user{
+    font-size: 18px;
+    /* background: rgba(255,255,255,0.5); */
+
+    margin: 4px 0;
+    height: 35px;
+    align-self: center;
+    color: #00BCD4;
+    text-align: left;
+}
+
+.user .name{
+    width: 160px;
+}
+
+.user .online{
+    width: 100px;
+}
+
+.user .gaming{
+    width: 100px;
+    color: red;
+}
+
+.invite{
+    width: 80px;
+    height: 30px;
+    /* background-color: #6da7ff; */
+    background: rgb(168, 205, 248);
+    color: #00BCD4;
+    border-radius: 27px;
+    border: none;
+    font-size: 18px;
+}
+
+.invite:hover{
+    transition: 1s all;
+    background: #03c9fa;
+}
+
+.invite:active{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transform: scale(.20);
+}
+.invite span{
+    font-size: 18px;
+}
+
+#chatroom .msg {
+    display: none;
+    height: 80px;
+    padding:5px;
+    width: 80%;
+    margin: 8px;
+    background-color: rgb(236, 222, 222);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
+    color:  #00BCD4;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.choice{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self:center;
+}
+
+#chatroom button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 0px;
+    color:  #00BCD4;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: rgb(236, 222, 222);
+}
+
+.inviteimg{
+    height: 23px;
+    margin-left: 5px;
+}
+
+#chatroom button:active{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transform: scale(.20);
+}
+  
+ 

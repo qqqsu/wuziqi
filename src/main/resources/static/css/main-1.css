@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+/* 左侧角色信息部署 */
+.left{
+    width: 190px;
+    height: 500px;
+    font-family: "微软雅黑";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card{
+    background-color:white;
+    width: 95%;
+    margin-top:20px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 220px;
+    border-style: solid;
+    border-color: #00BCD4;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    color: #00BCD4;
+    font-family: "黑体";
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+    table-layout: fixed;
+}
+
+.headimg{
+    width: 70px;
+    height: 70px;
+    border-radius: 47px;
+    border:2px double;
+}
+
+.colorimg{
+    position: relative;
+        top:20px;
+    display: none;
+}
+
+.td1{
+    width:55px;
+    text-align: left;
+}
+
+.td2{
+    text-align: left;
+}
+
+.colortd{
+    text-align: center;
+    display: none;
+}
+
+
+
+/* 中间棋盘信息部署 */
+.mid{
+    margin-top: 20px;
+}
+canvas{
+    background-image: url("../media/board1.png");
+    display: block; 
+    /* box-shadow: -7px -7px 7px #6f9ada,7px 7px 7px #616060; */
+    box-shadow: 0px 0px 5px 0px #9e9e9ed9;
+    border: 1px solid #9E9E9E;
+    border-radius: 20px;
+}
+
+#again{
+    display: none;
+    position: absolute;
+        left:525px;
+        bottom: 320px;
+    width: 100px;
+    height: 35px;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    box-sizing: border-box;
+    color: #00BCD4;
+    background: rgba(225, 225, 225, 0.1);
+    border: none;
+    box-shadow: 1px 1px 3px 1px #9e9e9ed2;
+}
+
+#again:hover{
+    transition: 1s all;
+    background: #01BCFF;
+    color: #fff;
+}
+
+#again:active{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transform: scale(.20);
+}
+
+
+#status{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    height: 60px;
+    margin-top: 20px;
+}
+
+#status button,#state{
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 800;
+    box-sizing: border-box;
+    color: #00BCD4;
+    background: rgba(223, 215, 215, 0.945);
+    border: none;
+    box-shadow: 1px 1px 3px 1px #9e9e9ed2;
+}
+
+#state{
+    width: 120px;
+    display:flex;
+    justify-content: center;
+}
+
+#state .state-chess{
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    margin-right: 15px;
+    display: none;
+}
+
+#state #chessName{
+    align-self: center;
+}
+
+#status button:hover{
+    transition: 1s all;
+    background: #01BCFF;
+    color: #fff;
+}
+
+#status button:active{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transform: scale(.20);
+}
+
+.cat{
+    width:100px;
+    color: #00BCD4;
+    font-weight: 800;
+    font-size: 15px;
+    position: absolute;
+        left:525px;
+        bottom: 320px;
+        width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0);
+    opacity: 0;
+    transition-duration: 1s;
+    transition-timing-function:ease-out;
+    transition-property: transform, opacity;
+}
+.cat.show{
+    transform: scale(2);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

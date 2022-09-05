@@ -1,0 +1,88 @@
+<!--
+ * @Author: error: git config user.name && git config user.email & please set dead value or install git
+ * @Date: 2022-06-30 21:48:03
+ * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
+ * @LastEditTime: 2022-07-16 10:54:13
+ * @FilePath: \总监日记表单\main.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="../css/main-1.css">
+    <link rel="stylesheet" href="../css/main-2.css">
+    <title>五子棋联机对战</title>
+
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="left">
+            <table class="card" >
+                <tr><td class='td1'><img id='myhead' class="headimg" src="../media/h0.jpg"></th><td class='colortd' class='td2'> <img id='mycolor' class="colorimg" src="../media/black.png"></td></tr>
+                <tr><td class='td1'>昵称:</td><td class='td2' id='myname'></td></tr>
+                <tr><td class='td1'>总时:</td><td class='td2' id='myttime'></td></tr>
+                <tr><td class='td1'>步时:</td><td class='td2' id='mystime'></td></tr>
+            </table>
+            <table class="card" >
+                <tr><td class='td1'><img id='yourhead' class="headimg" src="../media/h0.jpg"></th><td class='colortd' class='td2'> <img id='yourcolor' class="colorimg" src="../media/black.png"></td></tr>
+                <tr><td class='td1'>昵称:</td><td id='yourname' class='td2'></td></tr>
+                <tr><td class='td1'>总时:</td><td id='yourttime' class='td2'></td></tr>
+                <tr><td class='td1'>步时:</td><td id='yourstime' class='td2'></td></tr>
+            </table>
+        </div>
+
+        <div class="mid" >
+
+            <canvas id="chess" width = "525" height="525";  ></canvas>
+            <div class="cat">ceshi</div>
+            <button id="again">再来一局</button>
+            <div id="status">
+                <button id="runaway">离开</button>
+                <button id="giveup">认输</button>
+                <button id="regret">悔棋</button>
+                <div id="state">
+                    <img class="state-chess" src = "../media/black1.png">
+                    <div id="chessName"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div id="head">
+                邀请好友作战吧！
+            </div>
+            <div id="onlineusers">
+                <div class="title" >在线列表</div>
+                <table id="userlist">
+                </table>
+            </div>
+            <div id="chatroom">
+                <div class='msg'>
+                    <div class='invitefrom'></div>
+                    <div class='choice">
+                        <button id='accept'>同意 <img class='inviteimg' src='../media/accept.png'></button>
+                        <button id='refuse'>拒绝 <img class='inviteimg' src='../media/refuse.png'></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img id="blackchess" src="../media/blackchess.png" width="35" height="35" style="display: none">
+    <img id="whitechess" src="../media/whitechess.png" width="35" height="35" style="display: none">
+    <audio id="startmusic" src="../media/startmusic.wav"></audio>
+    <audio id="playmusic" src="../media/chessone.wav"></audio>
+    <audio id="winmusic" src="../media/winmusic.wav"></audio>
+    <audio id="losemusic" src="../media/losemusic.wav"></audio>
+    <audio id="msgmusic" src="../media/msgmusic.wav"></audio>
+    <script src="../js/main-draw.js"></script>
+    <script src="../js/main-media.js"></script>
+    <script src="../js/main-util.js"></script>
+    <script src="../js/main-game.js"></script>
+    <script src="../js/main-main.js"></script>
+    <script>
+    </script>
+</body>
+</html>
