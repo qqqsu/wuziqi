@@ -12,11 +12,18 @@
 ## 5.关于游戏计时功能
 目前是采用每一秒服务器向每个游览器推送当前游戏时间的方式,如果同时的游戏数过可能会出现计时不准确的问题?小伙伴们有更好的思路可以交流。
 ## 6.其他待开发功能
-#6.1 用户输赢记录，及排行榜
-#6.2 历史游戏记录
-#6.3 更改，查看用户信息
-#6.4 游戏内聊天
-...
+用户输赢记录，及排行榜；历史游戏记录；更改，查看用户信息；游戏内聊天...
+## 7. PPPPPPS
+数据库要先创一个table<br>
+id int AI PK<br>
+username varchar(10) <br>
+password varchar(15) <br>
+totalgames int <br>
+wingames int <br>
+runawaygames int <br>
+winrate double(4,2) <br>
+runawayrate double(4,2) <br>
+headid int<br>
 
 
 
